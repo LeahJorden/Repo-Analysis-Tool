@@ -119,7 +119,6 @@ function ensureTicker() {
 }
 
 async function tick() {
-  if (document.hidden) return;
   try {
     await loadRepos();
   } catch (_error) { /* keep the previous list */ }
